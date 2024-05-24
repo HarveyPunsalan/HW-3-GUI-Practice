@@ -79,9 +79,9 @@ public class GradeCalculator {
             // pop-up message to display the final grade
             JOptionPane.showMessageDialog(frame, "Your final grade is: " + finalGrade, "Final Grade", JOptionPane.INFORMATION_MESSAGE);
 
-        } catch (IllegalArgumentException ex) {
+        } catch (IllegalArgumentException e) {
             // Show error message if input is invalid
-            JOptionPane.showMessageDialog(frame, "Ohh ohh, there was an issue with your input: " + ex.getMessage(), "Input Error", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(frame, "Ohh ohh, there was an issue with your input: " + e.getMessage(), "Input Error", JOptionPane.ERROR_MESSAGE);
         }
     }
 
